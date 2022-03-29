@@ -67,10 +67,10 @@ void loop()
   measuredWeight = getWeight();
   
   
-//  printResult(db, measuredHeight, measuredWeight, gender);
+  printResult(db, measuredHeight, measuredWeight, gender);
 
 
-  printResult(db, 137, 85.8, 0);
+//  printResult(db, 137, 85.8, 0);
   Serial.println();
   Serial.println();
   delay(1000);

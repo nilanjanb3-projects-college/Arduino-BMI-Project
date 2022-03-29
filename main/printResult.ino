@@ -1,6 +1,15 @@
 // Function to print result
 void printResult(int db[][4], int height, float weight, int gender){
   // Code Begin
+// Printing user height
+  Serial.print("Your height is :");
+  Serial.print(height);
+  Serial.println(" cms");
+// Printing user weight
+  Serial.print("Your weight is :");
+  Serial.print(weight);
+  Serial.println(" kgs");
+      
   if(height < 137){
     Serial.println("OOPS !!! height lesser than 137 cm can't be processed");
   }
@@ -38,13 +47,6 @@ void printResult(int db[][4], int height, float weight, int gender){
       }
 
       // Calculating BMI
-      Serial.print("Your height is :");
-      Serial.print(height);
-      Serial.println(" cms");
-
-      Serial.print("Your weight is :");
-      Serial.print(weight);
-      Serial.println(" kgs");
 
       BMI = ((weight/height)/height)*10000;
       Serial.print("Your Accurate BMI is :");
@@ -81,13 +83,6 @@ void printResult(int db[][4], int height, float weight, int gender){
         Serial.println(" kgs");
       }
       // Calculating BMI
-      Serial.print("Your height is :");
-      Serial.print(height);
-      Serial.println(" cms");
-
-      Serial.print("Your weight is :");
-      Serial.print(weight);
-      Serial.println(" kgs");
 
       BMI = ((weight/height)/height)*10000;
       Serial.print("Your Accurate BMI is :");
